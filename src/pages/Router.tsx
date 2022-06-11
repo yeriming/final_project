@@ -8,6 +8,7 @@ import { ChatPage } from './ChatPage';
 import { MorePage } from './MorePage';
 import { BestPage } from './BestPage';
 import { EDPage } from './EDPage';
+import { DMPage } from './DMPage';
 
 export const Router = () => {
   return (
@@ -20,7 +21,7 @@ export const Router = () => {
       <Route path="/more" component={MorePage} exact />
       <Route path="/best" component={BestPage} exact />
       <Route path="/ed" component={EDPage} exact />
-      <Route path="/rooms/:id" component={EDPage} exact />
+      <Route path="/rooms/:id" component={DMPage} exact />
       <Route path="/">
         <Redirect to="/" />
       </Route>

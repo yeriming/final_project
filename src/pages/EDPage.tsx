@@ -16,7 +16,7 @@ export const EDPage = () => {
         <div className="ml-5">리폼 의류를 만듭니다</div>
       </div>
       <div className="bg-teal-600 text-white text-center py-4 rounded-md mt-4">
-        <button type="button" onClick={() => push('/EDdm')}>
+        <button type="button" onClick={() => push('/rooms/:id')}>
           문의하기
         </button>
       </div>

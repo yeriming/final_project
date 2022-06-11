@@ -1,10 +1,10 @@
 import { useHistory } from 'react-router-dom';
 
-export const MorePage = () => {
+export const DMPage = () => {
   const { push } = useHistory();
   return (
 <div>
-
+ <div>aa</div>
 
 
 
