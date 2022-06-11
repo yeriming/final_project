@@ -1,39 +1,32 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 export const StartPage = () => {
+  const { push } = useHistory();
   return (
-    <div>
-      <img
-        src="https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/11b0/image/7Pn_LEVTCBWUeVyU-n97y9vIAdE.jpg"
-        alt=""
-        className="
-        w-full
-        h-100
-        rounded-2xl"
-      />
-      <div
-        className="
-       text-2xl
-       font-bold mb-4"
-      >
-        Nth Birth
+    <div className="h-screen bg-gradient-to-tl from-cyan-200 to-green-400 w-full py-16 px-4">
+      <div>
+        <div
+          className="
+       text-4xl
+       font-bold mb-4 text-center text-teal-900"
+        >
+          Nth Birth
+        </div>
+
+        <div className="mt-10">
+          <div className="bg-teal-600 text-white text-center py-4 rounded-md mt-4">
+            <button type="button" onClick={() => push('/login')}>
+              로그인
+            </button>
+          </div>
+          <div className="text-center py-4 text-teal-600 border border-teal-600 mt-4 rounded-md">
+            <button type="button" onClick={() => push('/signup')}>
+              회원가입
+            </button>
+          </div>
+        </div>
       </div>
-      <img
-        src="https://post-phinf.pstatic.net/MjAyMDA5MTBfMjkw/MDAxNTk5NzE3MDU0OTk1.0D_9Tju8JCaSF0GN_YZitkxrHMKE9fPkHPDxgVeys_gg.2oA-ajbN_0sdgj8KFA1Gmrq3b29yEpl-38CxHcghP48g.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2020-07-10_%EC%98%A4%ED%9B%84_5.30.22.png?type=w1200"
-        alt=""
-        className="
-       w-full
-       h-100
-       rounded-2xl"
-      />
-      <img
-        src="https://post-phinf.pstatic.net/MjAyMDA5MTBfOTkg/MDAxNTk5NzE3MDU2MjUx.UuWcfIQiTmHgjBrrDsR9J9wYGxKWe-BIogLQPoVWnKQg.5naOvLmdS30s0EBSbDDAy5GoWDufi2XDEmzK4DfToCkg.PNG/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2020-07-10_%EC%98%A4%ED%9B%84_5.35.47.png?type=w1200"
-        alt=""
-        className="
-       w-full
-       h-100
-       rounded-2xl"
-      />
     </div>
   );
 };

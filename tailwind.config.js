@@ -59,6 +59,10 @@ module.exports = {
         'screen-5': 'calc( 100vh - 5rem )',
         'screen-10': 'calc( 100vh - 10rem )',
         'screen-15': 'calc( 100vh - 15rem )',
+        80: '20rem',
+      },
+      width: {
+        70: '17.5rem',
       },
       minWidth: {
         ...defaultTheme.spacing,
