@@ -22,8 +22,9 @@ export const LoginPage = () => {
       .then((response) => {
         // Handle susccess.s
         console.log('Well done!');
-        console.log('User token', response.data.jwt);
+        console.log('User token', response.data);
         localStorage.setItem('token', response.data.jwt);
+        localStorage.setItem('id', response.data.user.id);
         push('/');
       })
       .catch((error) => {
