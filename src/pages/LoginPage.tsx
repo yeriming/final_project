@@ -24,7 +24,7 @@ export const LoginPage = () => {
         console.log('Well done!');
         console.log('User token', response.data);
         localStorage.setItem('token', response.data.jwt);
-        localStorage.setItem('id', response.data.user.id);
+        localStorage.setItem('username', response.data.user.username);
         push('/');
       })
       .catch((error) => {

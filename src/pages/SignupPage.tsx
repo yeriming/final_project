@@ -24,6 +24,7 @@ export const SignupPage = () => {
         console.log('User profile', response.data.user);
         console.log('User token', response.data.jwt);
         localStorage.setItem('token', response.data.jwt);
+        localStorage.setItem('username', response.data.user.username);
         push('/');
       })
       .catch((error) => {

@@ -6,6 +6,22 @@ export const BestPage = () => {
   return (
     <div>
       <div>
+        <div className="m-5 text-teal-900">
+          <a href="javascript:history.back();">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-10 w-10"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
         <div className="text-4xl font-bold text-teal-900 mt-5 text-center">
           {' '}
           Best{' '}
@@ -17,7 +33,7 @@ export const BestPage = () => {
             onClick={() => push('/ed')}
           >
             <img
-              src="https://cafe24img.poxo.com/shoplagirl/web/product/big/202112/a500183fe92556ba58faed4b9b9b1cd1.jpg"
+              src="https://pbs.twimg.com/media/ExDjUeSVcAMhkVg.jpg"
               alt=""
               className="w-20 h-20 rounded-full m-5"
             />
@@ -28,7 +44,7 @@ export const BestPage = () => {
 
           <div className="flex m-10 bg-teal-100 rounded-xl">
             <img
-              src="https://image.made-in-china.com/44f3j00hmVHAvIcAtkY/Fashion-Design-Unique-Kids-Formal-Dress-Frock-Evening-Wedding-Party-Child-Clothes-Girl-Dress.jpg"
+              src="https://m.avenue2z.com/web/product/medium/202204/6a0920ccaf9e0b78ccf570c4ca5d605a.jpg"
               alt=""
               className="w-20 h-20 rounded-full m-5"
             />
@@ -65,17 +81,50 @@ export const BestPage = () => {
         <div className="fixed bottom-0 left-0 right-0 flex">
           <div className="bg-teal-600 text-white text-center py-4 flex-auto rounded-tl-lg">
             <button type="button" onClick={() => push('/')}>
-              홈
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+              </svg>
             </button>
           </div>
           <div className="text-center py-4 text-teal-600 border border-teal-600 bg-white flex-auto">
             <button type="button" onClick={() => push('/chat')}>
-              디엠
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                />
+              </svg>
             </button>
           </div>
           <div className="text-center py-4 text-teal-600 border border-teal-600 bg-white flex-auto rounded-tr-lg">
             <button type="button" onClick={() => push('/more')}>
-              더보기
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                />
+              </svg>
             </button>
           </div>
         </div>

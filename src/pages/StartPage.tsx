@@ -6,14 +6,39 @@ export const StartPage = () => {
   return (
     <div className="h-screen bg-gradient-to-tl from-cyan-200 to-green-400 w-full py-16 px-4">
       <div>
+      <div className="flex justify-center">
         <div
           className="
+       text-8xl
+       font-bold mb-4 text-center text-teal-900"
+        >
+          N
+        </div>
+        <div
+        className="
        text-4xl
        font-bold mb-4 text-center text-teal-900"
         >
-          Nth Birth
+          th
         </div>
-
+        <div
+        className="
+       text-8xl
+       font-bold mb-4 text-center text-teal-900"
+        >
+         B
+        </div>
+       <div
+       className="
+       text-4xl
+       font-bold mb-4 text-center text-teal-900"
+        >
+          irth
+        </div>
+        </div>
+      </div>
+      
+      <div>
         <div className="mt-10">
           <div className="bg-teal-600 text-white text-center py-4 rounded-md mt-4">
             <button type="button" onClick={() => push('/login')}>
